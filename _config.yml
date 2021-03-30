@@ -1,8 +1,8 @@
 remote_theme : vszhub/not-pure-poole
 
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
+title: Seongmin Django
+description:
 url: https://hih0422.github.io/django
 avatar: /avatar.jpeg
 paginate: 5
