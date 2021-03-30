@@ -11,7 +11,7 @@ theme_settings :
   profile :
     image : django/assets/img/smile.png
     username : Seongmin Kim
-    description : python php javascript
+    description : python / php / javascript
     experience :
       - start : 2017-05-03
         end : 2018-05-06
