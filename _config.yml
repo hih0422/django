@@ -5,11 +5,11 @@ url : "https://hih0422.github.io/django"
 # Blog Settings
 theme_settings :
   title : Grape Theme
-  favicon : assets/favicon.ico
+  favicon : django/assets/favicon.ico
 
   # Profile Settings
   profile :
-    image : assets/img/smile.png
+    image : django/assets/img/smile.png
     username : Seongmin Kim
     description : creator of Grape-Theme! Grape-Theme is my first jekyll theme and you can customize this theme easily.
     experience :
