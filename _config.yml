@@ -4,14 +4,14 @@ url : "https://hih0422.github.io/django"
 
 # Blog Settings
 theme_settings :
-  title : Grape Theme
+  title : Seongmin Django
   favicon : django/assets/favicon.ico
 
   # Profile Settings
   profile :
     image : django/assets/img/smile.png
     username : Seongmin Kim
-    description : creator of Grape-Theme! Grape-Theme is my first jekyll theme and you can customize this theme easily.
+    description : python php javascript
     experience :
       - start : 2017-05-03
         end : 2018-05-06
@@ -24,7 +24,7 @@ theme_settings :
   icons :
     email:  # Full email address, e.g. "sample@google.com"
     linkedin:  # Full URL 
-    github: naye0ng
+    github: hih0422
     gitlab: 
     bitbucket: 
     google_plus:
