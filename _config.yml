@@ -9,7 +9,7 @@ theme_settings :
 
   # Profile Settings
   profile :
-    image : django/assets/img/smile.png
+    image : django/assets/img/avartar.jpg
     username : Seongmin Kim
     description : python / php / javascript
     experience :
