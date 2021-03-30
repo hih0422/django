@@ -9,6 +9,9 @@ paginate: 5
 permalink: pretty
 cover_image: /bg.jpeg
 
+cover_bg_color: rgb(40, 73, 77)
+cover_color: rgb(255, 255, 255)
+
 # Gems
 plugins:
   - jekyll-gist
