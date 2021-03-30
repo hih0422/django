@@ -1,7 +1,7 @@
 remote_theme : vszhub/not-pure-poole
 
 # Setup
-title: Seongmin Django
+title: Seongmin
 description:
 url: https://hih0422.github.io/django
 avatar: /avatar.jpeg
@@ -33,16 +33,16 @@ exclude:
   - not-pure-poole.gemspec
 
 # Optimize Jekyl SEO Tag
-twitter:
-  username: vszhub
-  card: summary
+#twitter:
+ # username: vszhub
+  #card: summary
 logo: logo.png
-social:
-  name: Songzi Vong
-  links:
-    - https://twitter.com/vszhub
-    - https://github.com/vszhub
-google_site_verification: xxxxx
+#social:
+ # name: Songzi Vong
+  #links:
+   # - https://twitter.com/vszhub
+    #- https://github.com/vszhub
+#google_site_verification: xxxxx
 lang: en
 
 sass:
@@ -59,6 +59,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  name: Seongmin
+  url: https://github.com/hih0422/
+  email: hih0422@gmail.com
