@@ -98,7 +98,7 @@ def index(request):
 
 그리고 faq.html로 이동하여 아래와 같이 적어줍니다.
 
-{% highlight html %}
+{% highlight python %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
