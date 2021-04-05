@@ -5,7 +5,7 @@ subtitle : How markdown is displayed as html
 tags: [Sample Post, Demo]
 author: Nayeong Kim
 categories:
- -Django
+ - Django
 comments : True
 ---
 
