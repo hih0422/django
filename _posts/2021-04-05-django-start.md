@@ -2,7 +2,6 @@
 layout: post
 title: Django start
 subtitle : django settings
-tags: [django]
 author: Seongmin Kim
 categories:
  - Django
