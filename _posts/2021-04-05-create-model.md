@@ -72,6 +72,55 @@ python manage.py createsuperuser
 그 옆에 Add 버튼을 누르면 Model에 생성해 주었던 title 과 contents를 추가할 수 있게 되어있습니다.
 몇개 정도 추가를 해주시고 이제 추가한 내용을 페이지에 출력해 보겠습니다.
 
+<br>
+
+faq 앱의 views.py로 이동합니다.
+기존에 적어두었던 index 함수를 아래와 같이 변경합니다.
+
+{% highlight html %}
+from django.shortcuts import render
+from django.http import HttpResponse
+from .models import Post
+
+# Create your views here.
+
+def index(request):
+
+    ## Post 모델의 모든 object를 가져온다
+    post = Post.objects.all()
+
+    ## faq.html에 가져온 post object를 json 형태로 넘겨준다
+    return render(request, 'faq.html', {'post':post})
+{% endhighlight %}
+
+<br>
+
+
+그리고 faq.html로 이동하여 아래와 같이 적어줍니다.
+
+{% highlight html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>게시판페이지</h1>
+    <table>
+        {% for list in post %}
+            <ul>
+                <li>{{ list.title }}</li>
+                <li>{{ list.contents }}</li>
+            </ul>
+        {% endfor %}
+    </table>
+</body>
+</html>
+{% endhighlight %}
+
+이제 admon에서 등록했던 title과 contents 내용이 화면에 출력되는 것을 확인하실 수 있습니다.
+
 
 
 
