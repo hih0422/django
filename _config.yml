@@ -49,8 +49,4 @@ bootstrap:
   assets: true
   
   
-defaults:
-# _posts
-- scope:
-    path: "django"
-    type: posts
+permalink: /:django
