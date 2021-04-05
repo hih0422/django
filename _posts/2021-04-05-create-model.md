@@ -22,6 +22,10 @@ from django.db import models
 class Post(models.Model):
     title = models.CharField(max_length=50)
     contents = models.TextField()
+
+    # 게시글 제목을 title로 보여줌
+    def __str__(self):
+        return self.title
 {% endhighlight %}
 
 Post라는 class를 선언하여 그 안에 게시판에 등록할 title과 contents 필드를 만들어 줍니다.
@@ -63,5 +67,12 @@ python manage.py createsuperuser
 {% endhighlight %}
 
 해당 명령어를 입력후 super user로 사용할 계정을 만들어줍니다.
+그리고 http://127.0.0.1:8000/admin 에 접속하셔서 만드신 super user 계정으로 로그인하시면
+화면에 Posts라고 적힌 부분을 확인하실 수 있습니다.
+그 옆에 Add 버튼을 누르면 Model에 생성해 주었던 title 과 contents를 추가할 수 있게 되어있습니다.
+몇개 정도 추가를 해주시고 이제 추가한 내용을 페이지에 출력해 보겠습니다.
+
+
+
 
 
