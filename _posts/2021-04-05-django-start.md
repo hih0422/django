@@ -3,6 +3,8 @@ layout: post
 title: Django start
 subtitle : django settings
 author: Seongmin Kim
+categories:
+  - Django
 comments : False
 ---
 
