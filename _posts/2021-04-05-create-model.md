@@ -108,12 +108,12 @@ def index(request):
 <body>
     <h1>게시판페이지</h1>
     <table>
-        `{% for list in post %}`
+        "{% for list in post %}"
             <ul>
-                <li>`{{ list.title }}`</li>
-                <li>`{{ list.contents }}`</li>
+                <li>"{{ list.title }}"</li>
+                <li>"{{ list.contents }}"</li>
             </ul>
-        `{% endfor %}`
+        "{% endfor %}"
     </table>
 </body>
 </html>
