@@ -19,7 +19,7 @@ layout: default
     <section id="posts" class="col-md-8">
       {% for post in paginator.posts %}
       <div class="post">
-        <a href="{{ post.url | relative_url }}/django">
+        <a href="/django{{ post.url | relative_url }}">
           <div class="post-wrap">
             <div class="text-warp">
               <h3 class="title">{{ post.title }}</h3>
