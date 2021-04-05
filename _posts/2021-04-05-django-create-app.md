@@ -20,7 +20,8 @@ python manage.py startapp faq
 {% endhighlight %}
 
 명령어를 입력 하면 faq라는 디렉토리가 생성된 것을 확인하실 수 있습니다.
-![Basic django Logo](/django/assets/img/create_app.PNG)
+<br>
+![Create app](/django/assets/img/create_app.PNG)
 <br>
 
 디테일한 내용은 추후 포스트에서 다루고 장고 Setting을 시작하겠습니다.
