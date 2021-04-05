@@ -14,7 +14,7 @@ comments : False
 <h1> 1. Model 생성 및 Migration </h1>
 
 faq 앱 안의 models.py를 열어 아래와 같이 수정해줍니다.
-{% highlight html %}
+{% highlight python %}
 from django.db import models
 
 # Create your models here.
@@ -35,7 +35,7 @@ Post라는 class를 선언하여 그 안에 게시판에 등록할 title과 cont
 <br>
 
 여기까지 완료 되셨다면 모델을 migrate 해주셔야 합니다.
-{% highlight html %}
+{% highlight python %}
 python manage.py makemigrations faq
 python manage.py migrate
 {% endhighlight %}
@@ -50,7 +50,7 @@ django에서는 admin을 통한 데이터 CRUD가 가능합니다. 그렇게 하
 
 faq앱의 admin.py을 열어줍니다.
 Post 모델을 import하여 admin site에 등록하여줍니다.
-{% highlight html %}
+{% highlight python %}
 from django.contrib import admin
 from .models import Post
 
@@ -62,7 +62,7 @@ admin.site.register(Post)
 <br>
 
 이제 admin site에 접속을 해야 하는데, 먼저 admin 계정을 만들어줘야합니다.
-{% highlight html %}
+{% highlight python %}
 python manage.py createsuperuser
 {% endhighlight %}
 
@@ -77,7 +77,7 @@ python manage.py createsuperuser
 faq 앱의 views.py로 이동합니다.
 기존에 적어두었던 index 함수를 아래와 같이 변경합니다.
 
-{% highlight html %}
+{% highlight python %}
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Post
