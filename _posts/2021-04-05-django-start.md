@@ -9,7 +9,7 @@ comments : False
 Django는 Python 기반의 웹 프레임워크입니다. 브라우저로 부터 받는 HTTP Request에 대한 정보를 토대로 다음에 필요한 데이터를 불러와 작업을 수행합니다.
 그 다음으로 웹 어플리케이션은 브라우저에 Response를 반환하는데 주로 동적 HTML 페이지를 생성합니다.
 
-![Basic django Logo](/assets/img/basic-django.png)
+![Basic django Logo](/django/assets/img/basic-django.png)
 
 <br>
 {% highlight html %}
@@ -36,4 +36,23 @@ python3 -m django --version
 # Windows
 py -3 -m django --version
  2.0
+{% endhighlight %}
+
+<br>
+
+설치가 잘 되었다면 django를 시작할 프로젝트 경로에서 입력해주세요.
+{% highlight html %}
+django-admin startproject myproject
+{% endhighlight %}
+
+여기까지 완료 하였으면 myproject라는 장고 프로젝트가 생성되고 프로젝트 안에 아래처럼 경로가 생성되었을 것입니다.
+{% highlight html %}
+myproject
+ -myproject
+  -__init__.py
+  -asgi.py
+  -settings.py
+  -urls.py
+  -wsgi.py
+ -manage.py
 {% endhighlight %}
