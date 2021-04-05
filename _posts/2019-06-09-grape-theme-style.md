@@ -4,6 +4,7 @@ title: Sample Post with Grape-Theme style
 subtitle : How markdown is displayed as html
 tags: [Sample Post, Welcome to the Grape Theme!]
 author: Nayeong Kim
+permalink: /django
 comments : False
 ---
 
