@@ -67,5 +67,23 @@ urlpatterns = [
 {% endhighlight %}
 
 여기서는 faq 경로로  들어오는 요청을 화면을 보여주기 위한 views로 연결해 줍니다.
-views.index는 아래에서 다루겠지만 views의 index 함수를 뜻합니다.
+views.index는 views.py 파일의 index 함수를 호출합니다.
+
+
+<br>
+faq 폴더 안에 있는 views.py로 이동하셔서 아래처럼 수정해줍니다.
+우리는 views 안에서 요청된 데이터(request를 사용해 받는)의 가공, 모델과의 연결 등 데이터에 관련된 작업들을 진행 할 것입니다.
+{% highlight html %}
+from django.shortcuts import render
+from django.http import HttpResponse
+
+# Create your views here.
+
+def index(request):
+    return HttpResponse("faq screen")
+{% endhighlight %}
+
+index 함수가 호출되어 HttpResponse을 return 해주어 바로 화면에 faq screen을 보여주지만, return은 redirect를 해 줄 수도 있고, 여러가지 형태가 존재합니다.
+
+
 
