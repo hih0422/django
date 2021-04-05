@@ -96,11 +96,13 @@ def index(request):
 <br>
 
 
-그리고 faq.html로 이동하여 원하시는 위치에 아래처럼 적용합니다
+그리고 faq.html로 이동하여 원하시는 위치에 아래처럼 적용합니다.
 
 {% highlight python %}
-
-    ""{% for list in post %}""
+    <!-- html에서 파이선을 사용하는 법>
+    {% for list in post %}
+        {{ list.title }}
+        {{ list.contents }}
 
 {% endhighlight %}
 
