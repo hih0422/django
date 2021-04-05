@@ -12,6 +12,7 @@ Django는 Python 기반의 웹 프레임워크입니다. 브라우저로 부터 
 ![Basic django Logo](/django/assets/img/basic-django.png)
 
 <br>
+
 {% highlight html %}
  장고는 이 구조를 "모델 뷰 템플릿(MVT)" 아키텍쳐라 칭합니다.
 {% endhighlight %}
@@ -56,3 +57,18 @@ myproject
   -wsgi.py
  -manage.py
 {% endhighlight %}
+
+정상적으로 설치된것이 확인되었으면 manage.py가 있는 경로에서
+
+{% highlight html %}
+$ python manage.py runserver
+Watching for file changes with StatReloader
+[05/Apr/2021 14:38:18] "GET / HTTP/1.1" 200 16351
+[05/Apr/2021 14:38:18] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[05/Apr/2021 14:38:18] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[05/Apr/2021 14:38:18] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[05/Apr/2021 14:38:18] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+{% endhighlight %}
+
+가 나오면 정상적으로 django 서버가 실행된 것입니다.
+http://127.0.0.1:8000 으로 접속하시면 정상적으로 설치되었다는 문구와 함께 django 기본 페이지가 뜨는것을 확인하실 수 있습니다.
