@@ -49,13 +49,13 @@ django-admin startproject myproject
 여기까지 완료 하였으면 myproject라는 장고 프로젝트가 생성되고 프로젝트 안에 아래처럼 경로가 생성되었을 것입니다.
 {% highlight html %}
 myproject
- -myproject
-  -__init__.py
-  -asgi.py
-  -settings.py
-  -urls.py
-  -wsgi.py
- -manage.py
+ - myproject
+  -- __init__.py
+  -- asgi.py
+  -- settings.py
+  -- urls.py
+  -- wsgi.py
+ - manage.py
 {% endhighlight %}
 
 정상적으로 설치된것이 확인되었으면 manage.py가 있는 경로에서
