@@ -83,5 +83,10 @@ def index(request):
 
 index 함수가 호출되어 HttpResponse을 return 해주어 바로 화면에 faq screen을 보여주지만, return은 redirect를 해 줄 수도 있고, 여러가지 형태가 존재합니다.
 
+<br>
 
+여기까지 진행하였으면, http://127.0.0.1:8000/faq 화면에 faq screen 이라는 문자가 찍히는것을 확인 하실 수 있습니다.
 
+django의 앱 생성 및 url, view에 관해 간단하게 살펴보았습니다.
+
+다음 포스팅에는 DB연결을 진행해 보도록 하겠습니다.
