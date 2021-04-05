@@ -31,6 +31,23 @@ python manage.py startapp faq
 위와 같이 생성되었다면 이제부터 기능 별 구현은 app을 생성한 디렉토리 내에서,
 전체적인 설정은 myproject 내에서 구현한다고 생각하시면 될 것 입니다.
 
+앱을 생성하면 전체 설정을 한다고 하였던 myproject 폴더에서 settings.py를 열어줍니다.
+
+{% highlight html %}
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'faq',
+]
+{% endhighlight %}
+
+위와같이 faq를 추가해줍니다. 해당 설정은 faq라는 app을 사용하겠다고 선언해 준다고 생각하시면 됩니다.
+기타 설정들은 진행하면서 추가하도록 하겠습니다.
+
 <br>
 
 <h1> 2. url 및 view </h1>
