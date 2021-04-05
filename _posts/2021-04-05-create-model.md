@@ -96,27 +96,12 @@ def index(request):
 <br>
 
 
-그리고 faq.html로 이동하여 아래와 같이 적어줍니다.
+그리고 faq.html로 이동하여 원하시는 위치에 아래처럼 적용합니다
 
 {% highlight python %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>게시판페이지</h1>
-    <table>
-        "{% for list in post %}"
-            <ul>
-                <li>"{{ list.title }}"</li>
-                <li>"{{ list.contents }}"</li>
-            </ul>
-        "{% endfor %}"
-    </table>
-</body>
-</html>
+
+    ""{% for list in post %}""
+
 {% endhighlight %}
 
 이제 admon에서 등록했던 title과 contents 내용이 화면에 출력되는 것을 확인하실 수 있습니다.
