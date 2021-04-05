@@ -9,7 +9,7 @@ comments : False
 Django는 Python 기반의 웹 프레임워크이다. 브라우저로 부터 받는 HTTP Request에 대한 정보를 토대로 다음에 필요한 데이터를 불러와 작업을 수행한다.
 그 다음으로 웹 어플리케이션은 브라우저에 Response를 반환하는데 주로 동적 HTML 페이지를 생성한다.
 
-![GitHub Logo](/assets/basic-django.png)
+![Basic django Logo](/assets/img/basic-django.png)
 
 
 This post show result from awesome Markdown techniques like jekyll. 
