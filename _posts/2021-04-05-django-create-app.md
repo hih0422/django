@@ -34,4 +34,38 @@ python manage.py startapp faq
 <br>
 
 <h1> 2. url 및 view </h1>
+urls.py 의 설정은 브라우저에 입력한 주소의 경로를 연결해주는 설정 파일입니다.
+먼저 전체 설정을 한다고 했던 myproject안의 urls.py 파일을 열어줍니다.
+
+해당 설정파일에서 아래 부분을 추가해줍니다.
+{% highlight html %}
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('faq/', include('faq.urls'))
+]
+{% endhighlight %}
+
+우리는 http://127.0.0.1:8000/faq 로 들어오는 경로를 faq 앱으로 연결해줄 것입니다.
+include를 import에 추가해주시고, path를 추가해 줍니다.
+여기서 include는 faq app 안의 urls.py 설정을 참조한다는 내용입니다.
+
+<br>
+위의 url 입력을 마치셨다면, 생성해 두었던 faq 디렉토리에 방금전 수정했던 myproject 디렉토리의 urls.py 파일을 복사하여 붙여넣습니다.
+
+faq 앱의 urls.py 내용은 아래와 같이 수정합니다.
+
+{% highlight html %}
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('faq', views.index),
+]
+{% endhighlight %}
+
+여기서는 faq 경로로  들어오는 요청을 화면을 보여주기 위한 views로 연결해 줍니다.
+views.index는 아래에서 다루겠지만 views의 index 함수를 뜻합니다.
 
