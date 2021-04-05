@@ -62,11 +62,11 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('faq', views.index),
+    path('', views.index),
 ]
 {% endhighlight %}
 
-여기서는 faq 경로로  들어오는 요청을 화면을 보여주기 위한 views로 연결해 줍니다.
+여기서는 faq 경로로 들어오는 요청을 화면을 보여주기 위한 views로 연결해 줍니다.
 views.index는 views.py 파일의 index 함수를 호출합니다.
 
 
