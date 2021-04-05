@@ -21,3 +21,19 @@ Django는 Python 기반의 웹 프레임워크입니다. 브라우저로 부터 
 디테일한 내용은 추후 포스트에서 다루고 장고 Setting을 시작하겠습니다.
 
 <br>
+
+먼저, Python이 설치되어 있다는 가정하에 시작하겠습니다.
+Python 3.x 이상을 사용해주세요.
+
+{% highlight html %}
+pip3 install django // 장고설치
+
+장고 설치 완료후 설치가 잘 되었는지 확인
+# Linux/macOS X
+python3 -m django --version
+ 2.0
+
+# Windows
+py -3 -m django --version
+ 2.0
+{% endhighlight %}
