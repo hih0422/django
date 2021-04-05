@@ -1,8 +1,7 @@
-
 ---
 layout: post
-title: Django Create Model
-subtitle : django create model and connect DB
+title: Django Create App
+subtitle : django create app
 author: Seongmin Kim
 comments : False
 ---
