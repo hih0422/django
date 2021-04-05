@@ -1,8 +1,7 @@
-
 ---
 layout: post
-title: Django 설치 및 설정
-subtitle : Django를 설치하고 설정하는 과정
+title: Django start
+subtitle : Django start & settings
 tags: [django]
 author: Seongmin Kim
 comments : False
