@@ -12,6 +12,8 @@ comments : False
 
 <br>
 
+<h1> 1. Model 생성 및 Migration </h1>
+
 faq 앱 안의 models.py를 열어 아래와 같이 수정해줍니다.
 {% highlight html %}
 from django.db import models
@@ -26,4 +28,41 @@ class Post(models.Model):
 Post라는 class를 선언하여 그 안에 게시판에 등록할 title과 contents 필드를 만들어 줍니다.
 여기서 title은 모델의 Char 형태, contents는 TextField 형태로 선언해 주었습니다.
 기타 다른 형태도 많이 지원하니 찾아서 적용해보시는 것도 좋을 것 같습니다.
+
+<br>
+
+여기까지 완료 되셨다면 모델을 migrate 해주셔야 합니다.
+{% highlight html %}
+python manage.py makemigrations faq
+python manage.py migrate
+{% endhighlight %}
+
+위 명령어를 치시면 모델이 생성되는 것을 확인 하실 수 있습니다.
+
+<br>
+
+<h1> 2. Admin을 통한 model 접근 </h1>
+
+django에서는 admin을 통한 데이터 CRUD가 가능합니다. 그렇게 하기 위해서는 몇가지 추가가 필요합니다.
+
+faq앱의 admin.py을 열어줍니다.
+Post 모델을 import하여 admin site에 등록하여줍니다.
+{% highlight html %}
+from django.contrib import admin
+from .models import Post
+
+# Register your models here.
+
+admin.site.register(Post)
+{% endhighlight %}
+
+<br>
+
+이제 admin site에 접속을 해야 하는데, 먼저 admin 계정을 만들어줘야합니다.
+{% highlight html %}
+python manage.py createsuperuser
+{% endhighlight %}
+
+해당 명령어를 입력후 super user로 사용할 계정을 만들어줍니다.
+
 
