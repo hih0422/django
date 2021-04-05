@@ -44,13 +44,11 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('faq/', include('faq.urls'))
+    path('', include('faq.urls'))
 ]
 {% endhighlight %}
 
-우리는 http://127.0.0.1:8000/faq 로 들어오는 경로를 faq 앱으로 연결해줄 것입니다.
-include를 import에 추가해주시고, path를 추가해 줍니다.
-여기서 include는 faq app 안의 urls.py 설정을 참조한다는 내용입니다.
+http://127.0.0.1:8000/ 로 들어왔을때 faq 앱의 urls.py 파일을 참조한다는 내용입니다. 
 
 <br>
 위의 url 입력을 마치셨다면, 생성해 두었던 faq 디렉토리에 방금전 수정했던 myproject 디렉토리의 urls.py 파일을 복사하여 붙여넣습니다.
@@ -62,7 +60,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index),
+    path('faq', views.index),
 ]
 {% endhighlight %}
 
