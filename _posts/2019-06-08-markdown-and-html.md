@@ -4,6 +4,8 @@ title: Sample Post with Markdown
 subtitle : How markdown is displayed as html
 tags: [Sample Post, Demo]
 author: Nayeong Kim
+categories:
+ -Django
 comments : True
 ---
 
