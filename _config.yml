@@ -1,5 +1,5 @@
 # Site Settings
-baseurl: "/django"
+baseurl: ""
 url : "https://hih0422.github.io/django"
 
 # Blog Settings
