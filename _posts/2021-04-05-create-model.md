@@ -96,7 +96,7 @@ def index(request):
 <br>
 
 그리고 faq.html로 이동하여 원하시는 위치에 아래처럼 적용합니다.
-{% highlight python %}
+{% highlight html %}
 &#123;&#37; for list in post &#37;&#125; <br>
     &#123;&#123; list.title &#125;&#125; <br>
     &#123;&#123; list.contents &#125;&#125;
