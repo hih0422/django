@@ -96,6 +96,7 @@ def index(request):
 <br>
 
 ```
+{% for list in post %}
  public class text(){
  }
 ```
