@@ -95,6 +95,11 @@ def index(request):
 
 <br>
 
+```
+ public class text(){
+ }
+```
+
 그리고 faq.html로 이동하여 원하시는 위치에 아래처럼 적용합니다.2
 
 ```
