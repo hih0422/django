@@ -96,11 +96,11 @@ def index(request):
 <br>
 
 그리고 faq.html로 이동하여 원하시는 위치에 아래처럼 적용합니다.
-{% highlight html %}
+
 &#123;&#37; for list in post &#37;&#125; <br>
     &#123;&#123; list.title &#125;&#125; <br>
     &#123;&#123; list.contents &#125;&#125;
-{% endhighlight %}
+
 해당 문법은 html에서 python ojbect를 사용하고 출력하는 방법입니다.
 이제 admin에서 등록했던 title과 contents 내용이 화면에 출력되는 것을 확인하실 수 있습니다.
 
