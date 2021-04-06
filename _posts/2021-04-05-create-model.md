@@ -94,9 +94,9 @@ def index(request):
 {% endhighlight %}
 
 <br>
-
-```
 &#40;&#37; for list in post &#37;&#40;
+```
+
  public class text(){
  }
 ```
