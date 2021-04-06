@@ -97,13 +97,6 @@ def index(request):
 
 그리고 faq.html로 이동하여 원하시는 위치에 아래처럼 적용합니다.1
 
-
-    
-```{% for list in post %}``` <br>
-   ```{{ list.title }}```<br>
-   ```{{ list.contents }}```
-
-
 해당 문법은 html에서 python ojbect를 사용하고 출력하는 방법입니다.
 이제 admon에서 등록했던 title과 contents 내용이 화면에 출력되는 것을 확인하실 수 있습니다.
 
